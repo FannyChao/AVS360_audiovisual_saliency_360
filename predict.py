@@ -67,7 +67,7 @@ class PredictSaliency(object):
 
     def predict(self, stimuli_path, fps, out_path):
 
-        equator_bias = cv2.resize(cv2.imread('/media/fchang/My Passport/ICME2020/eq_ct_bias_a2.png', 0), (10,8))
+        equator_bias = cv2.resize(cv2.imread('ECB.png', 0), (10,8))
         equator_bias = torch.tensor(equator_bias).to(device, dtype=torch.float)
         equator_bias = equator_bias.cuda()
         equator_bias = equator_bias/equator_bias.max()
