@@ -15,7 +15,7 @@ import cv2
 
 # the folder find the videos consisting of video frames and the corredponding audio wav
 #VIDEO_TRAIN_FOLDER = './data_ICME20/'
-VIDEO_TRAIN_FOLDER = '/media/fchang/My Passport/Gaze Prediction 360 Video Dataset/frame_salmap_fixmap_GazePredi360_new/frame/audio_related/'
+VIDEO_TRAIN_FOLDER = 'GazePredi360_audiovisual-related/frame/'
 # where to save the predictions
 OUTPUT = '/media/fchang/Seagate Expansion Drive1/DAVE/log/Dave_cp_eqcb/type14_eqcb_a3/'
 # where tofind the model weights
