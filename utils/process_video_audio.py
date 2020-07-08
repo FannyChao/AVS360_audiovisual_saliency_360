@@ -338,7 +338,7 @@ class LoadVideoAudio_TRAIN(object):
         #self.root_folder = stimuli_in + '/frames/'
         self.batch_size = 6
         self.root_folder = stimuli_in
-        self.gt_folder = '/media/fchang/My Passport/Gaze Prediction 360 Video Dataset/frame_salmap_fixmap_GazePredi360_new/salmap/audio_related/' + stimuli_in.split('/')[-1]
+        self.gt_folder = 'GazePredi360_audiovisual-related/salmap/' + stimuli_in.split('/')[-1]
         self.sample = []
         self.max_frame_num = 250
         fr = vfps
