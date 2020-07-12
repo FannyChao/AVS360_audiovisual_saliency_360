@@ -15,11 +15,11 @@ import cv2
 
 # the folder find the videos consisting of video frames and the corredponding audio wav
 #VIDEO_TRAIN_FOLDER = './data_ICME20/'
-VIDEO_TRAIN_FOLDER = 'GazePredi360_audiovisual-related/frame/'
+VIDEO_TRAIN_FOLDER = '../dataset/GazePredi360_audiovisual-related/frame/'
 # where to save the predictions
-OUTPUT = '/media/fchang/Seagate Expansion Drive1/DAVE/log/Dave_cp_eqcb/type14_eqcb_a3/'
+OUTPUT = 'type14_eqcb_a3/'
 # where tofind the model weights
-MODEL_PATH = './weights/model.pth.tar'
+MODEL_PATH = '../dataset/model.pth.tar'
 
 # some config parameters
 
@@ -28,7 +28,7 @@ IMG_HIGHT = 320
 TRG_WIDTH = 32
 TRG_HIGHT = 40
 
-device = torch.device("cuda:0")
+device = torch.device("cuda")
 
 loss_function = nn.KLDivLoss()
 loss_function_bce = nn.BCELoss()
@@ -44,8 +44,11 @@ class TrainSaliency(object):
         self.video_list = [os.path.join(VIDEO_TRAIN_FOLDER, p) for p in os.listdir(VIDEO_TRAIN_FOLDER)]
         self.video_list = self.video_list
         self.video_list.sort()
-        pdb.set_trace()
+        # pdb.set_trace()
         self.model = DAVE()
+        self.model = self.model.to(device)
+        # self.model = self.model.cuda()
+
         self.model.load_state_dict(self._load_state_dict_(MODEL_PATH), strict=True)
         
         self.output = OUTPUT
@@ -53,8 +56,7 @@ class TrainSaliency(object):
                 os.mkdir(self.output)
         
        
-        self.model = self.model.to(device)
-        self.model = self.model.cuda()
+
         #self.model.eval()
     
     @staticmethod

@@ -44,9 +44,9 @@ class Cube2Equi:
         '''
         gridf = self.out_coord
         face_map = self.face_map
-        gridf = Variable(torch.Tensor(gridf).contiguous()).cuda(async=True)
+        gridf = Variable(torch.Tensor(gridf).contiguous()).cuda()
         face_map = Variable(torch.LongTensor(
-            face_map.astype(np.int)).contiguous()).cuda(async=True)
+            face_map.astype(np.int)).contiguous()).cuda()
 
         out_w = int(gridf.size(1))
         out_h = int(gridf.size(0))
