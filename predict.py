@@ -7,7 +7,7 @@ import numpy as np
 from PIL import Image
 from utils.process_video_audio import LoadVideoAudio
 
-from model import DAVE
+from model_predi import DAVE
 import pdb
 import matplotlib.pyplot as plt
 import cv2
