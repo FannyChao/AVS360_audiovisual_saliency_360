@@ -1,4 +1,20 @@
-# Audio-visual-Saliency
+# Towards Audio-Visual Saliency Prediction for Omnidirectional Video with Spatial Audio
+- This repo contains the codes that used in paper [*Towards Audio-Visual Saliency Prediction for Omnidirectional Video with Spatial Audio (VCIP2020)*](https://hal.archives-ouvertes.fr/hal-03104425) by Fang-Yi Chao, Cagri Ozcinar, Lu Zhang, Wassim Hamidouche, Olivier Deforges, Aljosa Smolic.
+
+## Abstract
+Omnidirectional videos (ODVs) with spatial audio enable viewers to perceive 360° directions of audio and visual signals during the consumption of ODVs with head-mounted displays (HMDs). By predicting salient audio-visual regions, ODV systems can be optimized to provide an immersive sensation of audio-visual stimuli with high-quality. Despite the intense recent effort for ODV saliency prediction, the current literature still does not consider the impact of auditory information in ODVs. In this work, we propose an audio-visual saliency (AVS360) model that incorporates 360° spatial-temporal visual representation and spatial auditory information in ODVs. The proposed AVS360 model is composed of two 3D residual networks (ResNets) to encode visual and audio cues. The first one is embedded with a spherical representation technique to extract 360° visual features, and the second one extracts the features of audio using the log mel-spectrogram. We emphasize sound source locations by integrating audio energy map (AEM) generated from spatial audio description (i.e., ambisonics) and equator viewing behavior with equator center bias (ECB). The audio and visual features are combined and fused with AEM and ECB via attention mechanism. Our experimental results show that the AVS360 model has significant superiority over five state-of-the-art saliency models. To the best of our knowledge, it is the first work that develops the audio-visual saliency model in ODVs.
+
+## Architecture
+![diagram]()
+
+## Visual Results
+- Qualitative results on 360AV-HM dataset
+
+## Requirements
+- python2
+
+## Pretrained models
+- [MV-SalGAN360 Generator Model](https://drive.google.com/drive/folders/19ib-aC5adN7lx74YQnTtPORltInq0kPA?usp=sharing)
 
 ## Installation
 
@@ -12,11 +28,19 @@ pip install torch===1.5.0 torchvision===0.6.0 -f https://download.pytorch.org/wh
 pip install librosa
 
 pip install numba==0.48
-
 ```
+## Usage
 
-### Test dataset (ICME20): https://filesender.renater.fr/?s=download&token=9d56459c-8fca-41f1-aee4-4b363906191d
-### Test dataset_AEM (ICME20): https://filesender.renater.fr/?s=download&token=093aa8c9-f2d5-44ef-87d4-7217e5e1ed58
-### Training dataset (GezePredi360_audiovisual-related): https://filesender.renater.fr/?s=download&token=e7264301-8a77-424e-b77b-403e64810060  
-### Pre-trained weights (our VCIP model): https://filesender.renater.fr/?s=download&token=8d5109fa-2f2e-4600-87c8-9e6705dad0eb
-### Pre-trained weights (DAVE model): https://filesender.renater.fr/?s=download&token=4fbf04a9-605a-46ca-b05c-27c786c0987d
+
+## Citing
+```
+@INPROCEEDINGS{9301766,
+  author={F. -Y. {Chao} and C. {Ozcinar} and L. {Zhang} and W. {Hamidouche} and O. {Deforges} and A. {Smolic}},
+  booktitle={2020 IEEE International Conference on Visual Communications and Image Processing (VCIP)}, 
+  title={Towards Audio-Visual Saliency Prediction for Omnidirectional Video with Spatial Audio}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={355-358},
+  doi={10.1109/VCIP49819.2020.9301766}}
+```
