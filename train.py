@@ -6,7 +6,7 @@ import torch.optim as optim
 import numpy as np
 from PIL import Image
 from utils.process_video_audio import LoadVideoAudio_TRAIN
-from model import DAVE
+from model_train import DAVE
 import pdb
 import matplotlib.pyplot as plt
 import time
