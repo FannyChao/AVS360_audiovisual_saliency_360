@@ -8,8 +8,8 @@ Omnidirectional videos (ODVs) with spatial audio enable viewers to perceive 360Â
 ![diagram](https://github.com/FannyChao/AVS360_audiovisual_saliency_360/blob/master/figs/AVS360_diagram.jpg)
 
 ## Visual Results
-- Qualitative results on [*360AV-HM dataset*] (https://github.com/cozcinar/360_Audio_Visual_ICMEW2020)
-(https://github.com/FannyChao/AVS360_audiovisual_saliency_360/blob/master/figs/results.jpg)
+- Qualitative results on [*360AV-HM dataset*](https://github.com/cozcinar/360_Audio_Visual_ICMEW2020)
+![results](https://github.com/FannyChao/AVS360_audiovisual_saliency_360/blob/master/figs/results.jpg)
 
 ## Requirements
 - python2
