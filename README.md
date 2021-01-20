@@ -34,6 +34,7 @@ pip install numba==0.48
 
 ## Usage
 - Test: To predict saliency maps, run ```predict.py``` after specifying the paths of ```VIDEO_TEST_FOLDER```, ```OUTPUT```, and ```MODEL_PATH```.
+        The audio energy map (AEM) can be generated from [Spatial Audio Generation](https://github.com/pedro-morgado/spatialaudiogen)  
 - Train: Run ```train.py``` after specifying the paths of ```VIDEO_TRAIN_FOLDER```, ```OUTPUT```, and ```MODEL_PATH```. 
 
 
