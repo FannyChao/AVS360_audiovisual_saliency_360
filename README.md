@@ -14,8 +14,8 @@ Omnidirectional videos (ODVs) with spatial audio enable viewers to perceive 360Â
 ## Requirements
 - python2
 
-## Pretrained models
-- [MV-SalGAN360 Generator Model](https://drive.google.com/drive/folders/19ib-aC5adN7lx74YQnTtPORltInq0kPA?usp=sharing)
+## Pretrained AVS360 model
+- [AVS360 Model]()
 
 ## Installation
 
