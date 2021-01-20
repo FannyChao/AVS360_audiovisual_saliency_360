@@ -16,6 +16,7 @@ Omnidirectional videos (ODVs) with spatial audio enable viewers to perceive 360Â
 
 ## Pretrained AVS360 model
 - [AVS360 Model]()
+(AVS360 is derived from the model DAVE. Please check [DAVE](https://github.com/hrtavakoli/DAVE) for more information.)
 
 ## Installation
 
@@ -33,7 +34,7 @@ pip install numba==0.48
 
 ## Usage
 - Test: To predict saliency maps, run ```predict.py``` after specifying the paths of ```VIDEO_TEST_FOLDER```, ```OUTPUT```, and ```MODEL_PATH```.
-- Train: Run ```train.py``` after specifying the paths of ```VIDEO_TRAIN_FOLDER```, ```OUTPUT```, and ```MODEL_PATH```.
+- Train: Run ```train.py``` after specifying the paths of ```VIDEO_TRAIN_FOLDER```, ```OUTPUT```, and ```MODEL_PATH```. 
 
 
 ## Citing
