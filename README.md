@@ -30,7 +30,10 @@ pip install librosa
 
 pip install numba==0.48
 ```
+
 ## Usage
+- Test: To predict saliency maps, run ```predict.py``` after specifying the paths of ```VIDEO_TEST_FOLDER```, ```OUTPUT```, and ```MODEL_PATH```.
+- Train: Run ```train.py``` after specifying the paths of ```VIDEO_TRAIN_FOLDER```, ```OUTPUT```, and ```MODEL_PATH```.
 
 
 ## Citing
