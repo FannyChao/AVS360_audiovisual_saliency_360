@@ -15,7 +15,7 @@ Omnidirectional videos (ODVs) with spatial audio enable viewers to perceive 360Â
 - python3
 
 ## Pretrained AVS360 model
-- [AVS360 Model]()
+- [AVS360 Model](https://drive.google.com/file/d/1dhNa-twB3VUfzuV2QMqgQp9XkfxgEheJ/view?usp=sharing)
 
 (AVS360 is derived from the model DAVE. Please check [DAVE](https://github.com/hrtavakoli/DAVE) for more information.)
 
