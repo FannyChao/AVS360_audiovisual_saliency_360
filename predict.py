@@ -15,9 +15,9 @@ import cv2
 # the folder find the videos consisting of video frames and the corredponding audio wav
 VIDEO_TEST_FOLDER = './data_ICME20/'
 # where to save the predictions
-OUTPUT = '/media/fchang/Seagate Expansion Drive1/DAVE/evaluation/with_train_new/result_Dave_cp_eqcb/type14_a3/ep10/'
+OUTPUT = '/output/folder/'
 # where tofind the model weights
-MODEL_PATH = '/media/fchang/Seagate Expansion Drive1/DAVE/log/Dave_cp_eqcb/type14_eqcb_a3/DAVE_ep10.pkl'
+MODEL_PATH = 'AVS360_ep25.pkl'
 # some config parameters
 
 IMG_WIDTH = 256
