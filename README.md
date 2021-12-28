@@ -35,10 +35,10 @@ pip install numba==0.48
 ```
 
 ## Usage
-- Test: To predict saliency maps, run ```predict.py``` after specifying the paths of ```VIDEO_TEST_FOLDER```, ```OUTPUT```, and ```MODEL_PATH```.
-        - The ambisonic audio energy map (AEM) of ICMEW2020 dataset used in this work are provided [AEM](https://drive.google.com/drive/folders/1uFCrzNiYYIcK5-LM1uJqPHFTDOMTlJa4?usp=sharing)
-        - The AEM can be generated via [Spatial Audio Generation](https://github.com/pedro-morgado/spatialaudiogen)  
-- Train: Run ```train.py``` after specifying the paths of ```VIDEO_TRAIN_FOLDER```, ```OUTPUT```, and ```MODEL_PATH```. 
+# Test: To predict saliency maps, run ```predict.py``` after specifying the paths of ```VIDEO_TEST_FOLDER```, ```OUTPUT```, and ```MODEL_PATH```.
+- The ambisonic audio energy map (AEM) of ICMEW2020 dataset used in this work are provided [AEM](https://drive.google.com/drive/folders/1uFCrzNiYYIcK5-LM1uJqPHFTDOMTlJa4?usp=sharing)
+- The AEM can be generated via [Spatial Audio Generation](https://github.com/pedro-morgado/spatialaudiogen)  
+# Train: Run ```train.py``` after specifying the paths of ```VIDEO_TRAIN_FOLDER```, ```OUTPUT```, and ```MODEL_PATH```. 
 
 
 ## Citing
